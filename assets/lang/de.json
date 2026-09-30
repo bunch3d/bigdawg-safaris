@@ -1,0 +1,60 @@
+{
+  "_note": "Entwurfsübersetzung — vor dem Start von einem Muttersprachler prüfen lassen, besonders den Ton der Marketingtexte.",
+
+  "navHome": "Startseite",
+  "navSafaris": "Safaris",
+  "navGallery": "Galerie",
+  "navReviews": "Bewertungen",
+  "navWhy": "Warum Big Dawg",
+  "navPlan": "Meine Safari Planen",
+
+  "heroKicker": "KENIANISCHES UNTERNEHMEN · LOKALE EXPERTISE · EUROPAFREUNDLICHER SERVICE",
+  "heroLine1": "Dein Kenia.",
+  "heroLine2": "Deine Sprache.",
+  "heroLine3": "Deine Safari.",
+  "heroText": "Durchdacht geplante Kenia-Reisen mit lokaler Safari-Expertise, sprachbasierter Gruppenzuordnung und privaten 4x4-Optionen.",
+  "ctaExplore": "Safaris Entdecken",
+  "ctaPlan": "Meine Safari Planen",
+
+  "badgeOwned": "Kenianisches Unternehmen",
+  "badgeLanguages": "Website in 5 Sprachen",
+  "badgePrivate": "Private 4x4-Optionen",
+  "badgeTransfer": "Flughafentransfer Inklusive",
+  "badgeGuides": "Lokale Safari-Guides",
+
+  "featuredKicker": "SIGNATURE-REISEN",
+  "featuredTitle": "Ein paar Favoriten zum Einstieg",
+  "featuredText": "Kurze Safaris, regionale Routen und längere Reisen, abgestimmt auf die Geografie Kenias.",
+  "viewAllSafaris": "Alle Safaris ansehen",
+
+  "safarisKicker": "BIG DAWG REISEN",
+  "safarisTitle": "Safaris",
+  "safarisText": "Kurze Safaris, regionale Routen und längere Reisen, abgestimmt auf die Geografie Kenias. Filtere nach dem, was dir am wichtigsten ist.",
+  "circuitsKicker": "MEHRPARK-ROUTEN",
+  "circuitsTitle": "Echte Rundreisen",
+  "circuitsText": "Längere Reisen, die sich ohne unnötiges Zurückfahren durch Kenia bewegen. Wenn ein Inlandsflug einen langen, sich wiederholenden Transfer erspart, kann das Endangebot stattdessen den Flug vorsehen.",
+
+  "reviewsKicker": "REISENDENSTIMMEN",
+  "reviewsTitle": "Was Reisende sagen",
+  "reviewsPageTitle": "Bewertungen und Sternebewertungen",
+  "reviewsPageText": "Erzähl zukünftigen Reisenden von deiner Erfahrung mit Big Dawg Safaris.",
+
+  "whyKicker": "WARUM BIG DAWG",
+  "whyTitle": "Praktische Gründe, mit uns zu reisen",
+  "whyPoint1Title": "Deine Sprache, Dein Komfort",
+  "whyPoint1Text": "Wir gruppieren nach Sprache, wenn möglich — für einfachere Kommunikation und eine besser passende Gruppe.",
+  "whyPoint2Title": "Privater 4x4 Land Cruiser",
+  "whyPoint2Text": "Fahrzeug mit aufklappbarem Dach und eigenem Fahrer-Guide, für Gruppen- oder Privatreisen.",
+  "whyPoint3Title": "Faire Preise",
+  "whyPoint3Text": "Gruppe, Privat oder Luxus — keine versteckten Kosten, klare Startpreise.",
+  "seeWhyLink": "Entdecke, warum Reisende uns wählen →",
+
+  "ctaBannerTitle": "Lass uns dein Kenia planen",
+  "ctaBannerText": "Für Verfügbarkeit, Sprachzuordnung und Endpreis: sag uns, wie du reisen möchtest.",
+  "ctaBannerButton": "Meine Safari Planen",
+
+  "footerContact": "Kontakt",
+  "footerDestinations": "Reiseziele",
+  "footerFollow": "Folge uns",
+  "footerNote": "Die endgültige Reiseroute und der Preis werden in deinem Angebot bestätigt."
+}

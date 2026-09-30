@@ -1,0 +1,60 @@
+{
+  "_note": "Draft translation — have a native Spanish speaker review this before launch, especially the tone of the marketing copy.",
+
+  "navHome": "Inicio",
+  "navSafaris": "Safaris",
+  "navGallery": "Galería",
+  "navReviews": "Opiniones",
+  "navWhy": "Por qué Big Dawg",
+  "navPlan": "Planear mi Safari",
+
+  "heroKicker": "PROPIEDAD KENIANA · EXPERIENCIA LOCAL · SERVICIO PARA EUROPEOS",
+  "heroLine1": "Tu Kenia.",
+  "heroLine2": "Tu Idioma.",
+  "heroLine3": "Tu Safari.",
+  "heroText": "Viajes por Kenia cuidadosamente diseñados, con experiencia local, grupos organizados por idioma y opciones de 4x4 privado.",
+  "ctaExplore": "Explorar Safaris",
+  "ctaPlan": "Planear mi Safari",
+
+  "badgeOwned": "Propiedad Keniana",
+  "badgeLanguages": "Sitio en 5 Idiomas",
+  "badgePrivate": "Opciones de 4x4 Privado",
+  "badgeTransfer": "Traslado al Aeropuerto Incluido",
+  "badgeGuides": "Guías Locales",
+
+  "featuredKicker": "VIAJES DESTACADOS",
+  "featuredTitle": "Algunos lugares favoritos para empezar",
+  "featuredText": "Safaris cortos, circuitos regionales y viajes más largos diseñados según la geografía de Kenia.",
+  "viewAllSafaris": "Ver todos los safaris",
+
+  "safarisKicker": "VIAJES BIG DAWG",
+  "safarisTitle": "Safaris",
+  "safarisText": "Safaris cortos, circuitos regionales y viajes más largos diseñados según la geografía de Kenia. Filtra por lo que más te importa.",
+  "circuitsKicker": "RUTAS MULTI-PARQUE",
+  "circuitsTitle": "Circuitos Reales",
+  "circuitsText": "Viajes más largos que avanzan por Kenia sin retrocesos innecesarios. Cuando un vuelo doméstico evita un traslado largo y repetitivo, la cotización final puede usar avión en su lugar.",
+
+  "reviewsKicker": "OPINIONES DE VIAJEROS",
+  "reviewsTitle": "Lo que dicen los viajeros",
+  "reviewsPageTitle": "Opiniones y Valoraciones",
+  "reviewsPageText": "Cuéntales a futuros viajeros tu experiencia con Big Dawg Safaris.",
+
+  "whyKicker": "POR QUÉ BIG DAWG",
+  "whyTitle": "Razones prácticas para viajar con nosotros",
+  "whyPoint1Title": "Tu Idioma, Tu Comodidad",
+  "whyPoint1Text": "Te agrupamos por idioma cuando es posible, para una comunicación más fácil y un mejor grupo.",
+  "whyPoint2Title": "Land Cruiser 4x4 Privado",
+  "whyPoint2Text": "Vehículo con techo elevable y tu propio guía-conductor, para viajes grupales o privados.",
+  "whyPoint3Title": "Precios Honestos",
+  "whyPoint3Text": "Grupo, Privado o Lujo — sin cargos ocultos, precios de partida claros.",
+  "seeWhyLink": "Descubre por qué nos eligen los viajeros →",
+
+  "ctaBannerTitle": "Planeemos tu Kenia",
+  "ctaBannerText": "Para disponibilidad, agrupación por idioma y precio final, cuéntanos cómo quieres viajar.",
+  "ctaBannerButton": "Planear mi Safari",
+
+  "footerContact": "Contacto",
+  "footerDestinations": "Destinos",
+  "footerFollow": "Síguenos",
+  "footerNote": "El itinerario final y el precio se confirman en tu cotización."
+}

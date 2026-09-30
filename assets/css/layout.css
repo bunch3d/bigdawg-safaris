@@ -1,0 +1,188 @@
+/* ==========================================================================
+   LAYOUT.CSS
+   Structural rules only: containers, grid/flex scaffolding, breakpoints.
+   Visual styling (colors, borders, shadows) lives in components.css —
+   keeping the two separate means resizing a section never means hunting
+   through button-color rules, and vice versa.
+   ========================================================================== */
+
+/* ---- Container: the single centered content column used everywhere ---- */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+}
+
+/* ---- Site header: logo | nav | language switcher, one consistent flex row
+   used on every page via includes/header.php ---- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header-height);
+}
+
+.site-header .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* Mobile nav: hidden off-canvas by default, toggled by main.js */
+.nav-toggle {
+  display: none; /* shown only on small screens, see breakpoints below */
+}
+
+/* ---- Hero: two-column on desktop (copy left, image right),
+   stacked on mobile. This keeps the brand's circular-photo motif from the
+   original site but on a predictable, responsive grid instead of
+   absolute-positioned guesswork. ---- */
+.hero .container {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: var(--space-6);
+  padding-block: var(--space-7);
+  min-height: calc(100vh - var(--header-height));
+}
+
+.hero-media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* ---- Badges strip: one evenly-divided row, not a grid of boxed cards —
+   dividers do the separating instead of borders/shadows on every item. ---- */
+.badges-strip .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+/* ---- Reusable responsive card grid.
+   auto-fit + minmax means this reflows from 3 → 2 → 1 columns without a
+   single media query — add or remove cards and the grid just adapts. ---- */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-5);
+}
+
+/* ---- Section spacing rhythm: every <section> gets the same vertical
+   breathing room so pages never feel cramped OR leave dead empty space. ---- */
+.section {
+  padding-block: var(--space-7);
+}
+
+.section-head {
+  max-width: 640px;
+  margin-bottom: var(--space-5);
+}
+
+/* ---- CTA banner: full-width band, centered content ---- */
+.cta-banner .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-4);
+  padding-block: var(--space-6);
+}
+
+/* ---- Footer: multi-column layout that collapses to stacked on mobile ---- */
+.site-footer .footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: var(--space-6);
+  padding-block: var(--space-7);
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding-block: var(--space-3);
+}
+
+/* ---- Floating WhatsApp button ---- */
+.whatsapp-float {
+  position: fixed;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  z-index: 200;
+}
+
+/* ==========================================================================
+   BREAKPOINTS
+   Mobile-first overrides, largest breakpoint first for readability.
+   ========================================================================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .site-footer .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Small tablet / large phone: hero stacks, nav collapses to a mobile menu */
+@media (max-width: 768px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-block: var(--space-6);
+    min-height: auto;
+  }
+
+  .hero-media {
+    order: -1; /* image above copy on mobile */
+  }
+
+  .nav-toggle {
+    display: inline-flex; /* hamburger button appears */
+  }
+
+  .nav-list {
+    position: fixed;
+    inset: var(--header-height) 0 auto 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    transform: translateY(-120%);
+    transition: transform 0.25s ease;
+  }
+
+  /* main.js toggles this class on menu button click */
+  .nav-list.is-open {
+    transform: translateY(0);
+  }
+
+  .badges-strip .container {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .site-footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

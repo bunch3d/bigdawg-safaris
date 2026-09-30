@@ -1,0 +1,60 @@
+{
+  "_note": "Traduction provisoire — à faire relire par un francophone natif avant le lancement, en particulier le ton du texte marketing.",
+
+  "navHome": "Accueil",
+  "navSafaris": "Safaris",
+  "navGallery": "Galerie",
+  "navReviews": "Avis",
+  "navWhy": "Pourquoi Big Dawg",
+  "navPlan": "Planifier Mon Safari",
+
+  "heroKicker": "PROPRIÉTÉ KÉNYANE · EXPERTISE LOCALE · SERVICE ADAPTÉ AUX EUROPÉENS",
+  "heroLine1": "Votre Kenya.",
+  "heroLine2": "Votre Langue.",
+  "heroLine3": "Votre Safari.",
+  "heroText": "Des voyages au Kenya soigneusement organisés, avec une expertise locale, des groupes assortis par langue et des options de 4x4 privé.",
+  "ctaExplore": "Découvrir les Safaris",
+  "ctaPlan": "Planifier Mon Safari",
+
+  "badgeOwned": "Propriété Kényane",
+  "badgeLanguages": "Site en 5 Langues",
+  "badgePrivate": "Options de 4x4 Privé",
+  "badgeTransfer": "Transfert Aéroport Inclus",
+  "badgeGuides": "Guides Locaux",
+
+  "featuredKicker": "VOYAGES EMBLÉMATIQUES",
+  "featuredTitle": "Quelques lieux favoris pour commencer",
+  "featuredText": "Safaris courts, circuits régionaux et voyages plus longs conçus selon la géographie du Kenya.",
+  "viewAllSafaris": "Voir tous les safaris",
+
+  "safarisKicker": "VOYAGES BIG DAWG",
+  "safarisTitle": "Safaris",
+  "safarisText": "Safaris courts, circuits régionaux et voyages plus longs conçus selon la géographie du Kenya. Filtrez selon ce qui compte le plus pour vous.",
+  "circuitsKicker": "ITINÉRAIRES MULTI-PARCS",
+  "circuitsTitle": "Circuits Réels",
+  "circuitsText": "Des voyages plus longs qui progressent à travers le Kenya sans retours en arrière inutiles. Quand un vol intérieur évite un long transfert répétitif, le devis final peut inclure ce vol.",
+
+  "reviewsKicker": "AVIS DES VOYAGEURS",
+  "reviewsTitle": "Ce que disent les voyageurs",
+  "reviewsPageTitle": "Avis et Notes",
+  "reviewsPageText": "Racontez aux futurs voyageurs votre expérience avec Big Dawg Safaris.",
+
+  "whyKicker": "POURQUOI BIG DAWG",
+  "whyTitle": "Des raisons concrètes de voyager avec nous",
+  "whyPoint1Title": "Votre Langue, Votre Confort",
+  "whyPoint1Text": "Nous vous regroupons par langue quand c'est possible, pour une communication plus facile et un groupe mieux adapté.",
+  "whyPoint2Title": "Land Cruiser 4x4 Privé",
+  "whyPoint2Text": "Véhicule à toit ouvrant avec votre propre chauffeur-guide, pour des voyages en groupe ou privés.",
+  "whyPoint3Title": "Des Prix Honnêtes",
+  "whyPoint3Text": "Groupe, Privé ou Luxe — aucun frais caché, des prix de départ clairs.",
+  "seeWhyLink": "Découvrez pourquoi les voyageurs nous choisissent →",
+
+  "ctaBannerTitle": "Planifions votre Kenya",
+  "ctaBannerText": "Pour la disponibilité, l'appariement linguistique et le prix final, dites-nous comment vous voulez voyager.",
+  "ctaBannerButton": "Planifier Mon Safari",
+
+  "footerContact": "Contact",
+  "footerDestinations": "Destinations",
+  "footerFollow": "Suivez-nous",
+  "footerNote": "L'itinéraire final et le prix sont confirmés dans votre devis."
+}

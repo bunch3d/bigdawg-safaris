@@ -1,0 +1,58 @@
+{
+  "navHome": "Home",
+  "navSafaris": "Safaris",
+  "navGallery": "Gallery",
+  "navReviews": "Reviews",
+  "navWhy": "Why Big Dawg",
+  "navPlan": "Plan My Safari",
+
+  "heroKicker": "KENYAN-OWNED · LOCAL EXPERTISE · EUROPEAN-FRIENDLY SERVICE",
+  "heroLine1": "Your Kenya.",
+  "heroLine2": "Your Language.",
+  "heroLine3": "Your Safari.",
+  "heroText": "Thoughtfully routed Kenya journeys with local safari expertise, language-aware group matching and private 4x4 options.",
+  "ctaExplore": "Explore Safaris",
+  "ctaPlan": "Plan My Safari",
+
+  "badgeOwned": "Kenyan-Owned",
+  "badgeLanguages": "5 Website Languages",
+  "badgePrivate": "Private 4x4 Options",
+  "badgeTransfer": "Airport Transfer Included",
+  "badgeGuides": "Local Safari Guides",
+
+  "featuredKicker": "SIGNATURE JOURNEYS",
+  "featuredTitle": "A few favourite places to start",
+  "featuredText": "Short safaris, regional circuits and longer journeys designed around Kenya's geography.",
+  "viewAllSafaris": "View all safaris",
+
+  "safarisKicker": "BIG DAWG JOURNEYS",
+  "safarisTitle": "Safaris",
+  "safarisText": "Short safaris, regional circuits and longer journeys designed around Kenya's geography. Filter by what matters most to you.",
+  "circuitsKicker": "MULTI-PARK ROUTES",
+  "circuitsTitle": "Real Circuits",
+  "circuitsText": "Longer journeys that progress across Kenya without unnecessary backtracking. Where a domestic flight saves a long repetitive transfer, the final quote can use flying instead.",
+
+  "reviewsKicker": "TRAVELLER FEEDBACK",
+  "reviewsTitle": "What travellers say",
+  "reviewsPageTitle": "Reviews &amp; Star Ratings",
+  "reviewsPageText": "Tell future travellers about your Big Dawg Safaris experience.",
+
+  "whyKicker": "WHY BIG DAWG",
+  "whyTitle": "Practical reasons to travel with us",
+  "whyPoint1Title": "Your Language, Your Comfort",
+  "whyPoint1Text": "Matched by language where possible, for easier communication and a better group fit.",
+  "whyPoint2Title": "Private 4x4 Land Cruiser",
+  "whyPoint2Text": "Pop-up roof vehicle with your own driver-guide, for group or private trips.",
+  "whyPoint3Title": "Honest Pricing",
+  "whyPoint3Text": "Group, Private or Luxury — no hidden fees, clear starting prices.",
+  "seeWhyLink": "See why travellers choose us →",
+
+  "ctaBannerTitle": "Let's plan your Kenya",
+  "ctaBannerText": "For availability, language matching and final pricing, tell us how you want to travel.",
+  "ctaBannerButton": "Plan My Safari",
+
+  "footerContact": "Contact",
+  "footerDestinations": "Destinations",
+  "footerFollow": "Follow",
+  "footerNote": "Final itinerary and pricing are confirmed in your quotation."
+}

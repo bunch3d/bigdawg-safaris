@@ -1,0 +1,119 @@
+/* ==========================================================================
+   BASE.CSS
+   Reset + global element defaults. No layout/component rules here —
+   this file only decides what a bare <h1>, <p>, <a> etc. look like.
+   ========================================================================== */
+
+/* ---- Reset ---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%; /* 1rem = 16px, respects user font-size settings */
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+/* ---- Headings ----
+   Fraunces carries the brand's personality; keep weights deliberate rather
+   than defaulting to 700 everywhere. */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  color: var(--dark);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+}
+
+h3 {
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+}
+
+p {
+  max-width: 65ch; /* keeps body text readable — avoids overly long lines */
+}
+
+/* ---- Accessibility: visible keyboard focus ----
+   Never remove focus outlines without replacing them — this is a common
+   a11y regression. Gold outline matches brand instead of the browser default. */
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* ---- Respect reduced-motion preference ---- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ---- Utility ---- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
