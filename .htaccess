@@ -1,0 +1,86 @@
+# ==========================================================================
+# .htaccess — security headers
+# ------------------------------------------------------------------------
+# Ported from the original site's netlify.toml, but NOT copied verbatim —
+# that config was written for a site with no external font loading and no
+# admin page yet. This version is adapted to what THIS build actually
+# does, checked against the real code rather than assumed:
+#   - We load Google Fonts (Fraunces + Work Sans) via a <link> in
+#     includes/header.php, so style-src/font-src must allow Google's
+#     font domains or every page would silently render with fallback
+#     fonts and no error.
+#   - Every inline style="..." attribute used throughout the PHP pages
+#     needs 'unsafe-inline' on style-src, or the layout breaks.
+#   - All JavaScript is loaded from local files with no inline <script>
+#     blocks or onclick handlers, so script-src can stay 'self' only -
+#     stricter than the original needed to be.
+#   - The WhatsApp contact/booking flow (assets/js/contact.js) builds a
+#     wa.me link and opens it with window.open() - it's a navigation,
+#     not a form POST or fetch, so it needs no special CSP allowance.
+#
+# Requires mod_headers, which is enabled by default in XAMPP and on
+# almost every shared PHP host. If headers don't show up, check your
+# host's control panel for how to enable it.
+# ==========================================================================
+
+<IfModule mod_headers.c>
+
+  # ---- Clickjacking protection: don't allow this site in an iframe ----
+  Header always set X-Frame-Options "DENY"
+
+  # ---- Stop browsers guessing file types (blocks some XSS tricks) ----
+  Header always set X-Content-Type-Options "nosniff"
+
+  # ---- Only send the origin (not full URL incl. query strings) to
+  # other sites when a visitor clicks an outbound link ----
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # ---- Disable browser features this site never uses ----
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), serial=(), bluetooth=()"
+
+  # ---- Isolate this site's window from cross-origin popups/tabs ----
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+
+  # ---- Block legacy Flash/PDF cross-domain policy abuse ----
+  Header always set X-Permitted-Cross-Domain-Policies "none"
+
+  # ---- Force HTTPS for a year once this is live on a real domain.
+  # Browsers only honour this header over an actual HTTPS connection,
+  # so it's harmless to leave active during local XAMPP (HTTP) testing -
+  # it simply won't apply until the site is served over HTTPS. ----
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+  # ---- Content Security Policy ----
+  # default-src 'self'              baseline: only load this site's own resources
+  # base-uri 'self'                 stop injected <base> tags redirecting relative URLs
+  # object-src 'none'               no Flash/Java applets
+  # frame-ancestors 'none'          belt-and-suspenders with X-Frame-Options above
+  # form-action 'self'              every <form> on this site posts back to itself
+  # img-src 'self'                  every image is now a local file
+  # media-src 'self'                no video/audio yet, but harmless to set
+  # frame-src 'none'                nothing on this site embeds an iframe
+  # worker-src 'self'                no service workers yet, safe default
+  # style-src                       'self' + 'unsafe-inline' for the style="..."
+  #                                  attributes in the PHP templates, plus Google's
+  #                                  stylesheet host for the fonts
+  # script-src 'self'               all JS is external files - no inline script needed
+  # font-src                        'self' plus Google's font-file host
+  # connect-src 'self'              no client-side fetch() calls leave this origin
+  # upgrade-insecure-requests       auto-upgrade any stray http:// reference to https://
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; img-src 'self'; media-src 'self'; frame-src 'none'; worker-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self'; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; upgrade-insecure-requests"
+
+</IfModule>
+
+# ==========================================================================
+# Admin page lockdown (ready for when admin.php exists)
+# ------------------------------------------------------------------------
+# Mirrors the original's rule for review-admin.html: never cache this page
+# and keep it out of search engines, since it's where reviews get
+# approved. Uncomment once admin.php is built.
+# ==========================================================================
+# <IfModule mod_headers.c>
+#   <FilesMatch "^admin\.php$">
+#     Header always set Cache-Control "no-store"
+#     Header always set X-Robots-Tag "noindex, nofollow, noarchive"
+#   </FilesMatch>
+# </IfModule>
